@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+  em HTML eh id = em CSS eh #
+  em HTML eh class = em CSS eh .
+*/
+
+
+body{
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-image: linear-gradient(to right, #757DA9,#3F4464 );
+    
+}
+
+div{
+    background-color: bisque;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+div > p{
+    
+    display: none;
+}
+
+div:hover
+{
+  font-family: 'Courier New', Courier, monospace;
+ color: rgb(18, 112, 81);
+ background-color: aquamarine;
+}
+
+div:hover > p
+{
+  display: block;
+  color: white;
+  background-color: red;
+  
+}
+
+
+
+

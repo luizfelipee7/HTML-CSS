@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens-D</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos</p>
+    <picture>
+        
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        
+        
+        <img src="imagens/foto-g.png" alt="foto grande">
+    </picture>   
+       
+    <h1>Audio</h1>
+        
+        <audio preload="metadata" controls>
+             
+            <source src="midia/bentevi.mp3" type="audio/mpeg">
+            <source src="" type=""> // pode colocar outros formatos
+            
+
+          
+
+            <p>Infelizmente seu navegador nao consegue reproduzir audio</p>
+            <a href="midia/bentevi.mp3" download="bentevi.mp3" type="audio/mpeg">clique aqui para baixar o arquivo MP3</a>
+        </audio>
+    
+</body>
+</html>

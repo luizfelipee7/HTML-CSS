@@ -1,0 +1,606 @@
+HTML PARTE 1
+
+AULA TEORICA
+{
+      HTML      // conteudo
+      CSS       // estilo
+      JSCRIPT   // interacao
+
+      em css 
+      pt - ponto
+      px -  pixel 
+
+      <!DOCTYPE html>
+      <html lang="pt-br"> //liguagem 
+
+        <head>
+          <meta charset="UTF-8"> 
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>titulo</title>
+        </head>
+
+        <body>
+        <h1>Esse eh meu titulo do site </h1>
+
+        </body>
+
+      </html>
+
+      outras tags 
+
+      span       // seleciona um texto especifico
+}
+
+AULA 001 - primeiros passos
+{
+  tags
+
+    h1     // usado para titulos
+    p      // paragrafo
+    hr     // linha horizontal
+}
+ 
+AULA 002 - paragrafos e quebra de linha  e emojis
+{
+  tags:
+
+    br               // quebra a linha de um texto
+    &lt; text &gt;   // coloca as setinha <> de tags no site
+
+
+    simbolos especiais:
+      
+    Símbolo Descrição Entitiy
+      Espaço em branco &nbsp;
+      ® Marca registrada &reg;
+      © Copyright &copy;
+      ™ Trade Mark &trade;
+      € Euro &euro;
+      £ Libra (pound) &pound;
+      ¥ Yen &yen;
+      ¢ Cent &cent;
+      ∅ Vazio &empty;
+      ∑ Soma &sum;
+      Δ Delta &Delta;
+      ← Seta esquerda &larr;
+      ↑ Seta acima &uarr;
+      → Seta direita &rarr;
+      ↓ Seta baixo &darr;
+
+      Inserindo Emojis: 
+        
+        acesse o site da emojipedia.org
+
+        ultilize ( &#x codigo do emoji ; ) no site copie sempre depois do (+)
+}
+AULA 003 - Imagens e Favicon
+{
+   
+    Imagens:
+       tags 
+
+       img   // inserir imagens
+       {
+          <img src="(ctr + space)" alt=""> 
+
+          para colocar a imagen de um (ctr + space)
+          da pra baixar a imagen no seu pc ou pegar o link no navegador
+       }
+    favicon:
+     {
+          digite:
+          link e selecione favicon // em href colocar o icone baixado
+     }   
+}
+AULA 004 - Hierarquia de títulos
+{
+  tags
+
+  h1        // titulos principais 
+  h2        // subnivel do anterior 
+
+    e assim sucessivamente
+}
+
+ AULA 005 - Negrito e italico
+ {
+    tags
+
+    b       // negrito (nao semantico)
+    strong  // palavra forte (semantico)
+    i       // italico (nao semantico)
+    em      // enfase (semantico)
+ }
+
+ AULA 006 - Formatacoes adicioinais 
+ {
+   tags 
+
+   mark     // marca texto
+   big      // texto grande (nao semantico)
+   small    // texto pequeno (semantico) pode ser usado em contrato
+   dell     // texto excluido: cria um risco no texto
+   ins      // texto inserido (sublinhado) para da efase e indicar que ele foi inserido depois
+   u        // sublinha o texto(nao semantico)
+   sup      // texto em cima
+   sub      // texto em baixo 
+ }
+
+ AULA 007 - Citacoes e codigo
+ {
+   tags 
+
+   code        // fonte mono espacada usada pra ler codigos
+   pre         // deixa o texto identado pre formatado
+   q           // (aspas) usado pra citacao
+   blockquote  // cita a frase de algum autor
+   abbr        // texto abreviado 
+   bdo (l/r)   // texto invertido
+   
+   obs:
+
+   blockquote  
+      {
+        <blockquote cite = "(link da citacao)"></blockquote>
+      }
+ }
+
+ AULA 008 - Listas
+ {
+   tags 
+
+   ol       // listas ordenadas
+   ul       // listas nao ordenadas
+   li       // conteudo da lista
+
+   dl       // lista de definicao
+   dt       // termo da lista
+   dd       // descricao  da lista
+
+    obs:
+
+     (ol) pode ter  numeros(1)/letras(A/a)/romanos(I/i)
+      
+      usar (ol) indica uma lista porem temos que em cada passo colocar (li)
+      para definir qual usar fazemos um  parametro em (ol) escrito type para definir 
+      o tipo e tambem um (start) para definir quando comeca
+
+     (ul) pode ter disc/circle/square
+     
+     para definir qual usar fazemos um  parametro em (ul) escrito type para definir 
+      o tipo
+
+      Eu tambem posso misturar listas ordenadas e nao ordenada so colocar um (ol/ul) dentro da lista ja criada
+
+      (dl) posso criar uma lista para explicar cada conteudo. dentro de dl uso (dt) para o nome e (dd) para explicar cada nome
+ }
+
+ AULA 009 - Links e Ancoras
+ {
+
+    tags
+
+    a       // ancorar pode ser links externos/internos/arquivos 
+    
+    obs:
+
+    (a)
+    {
+          ao usar a taga (a), dentro de href colocar o link externo que voce queira usar 
+
+        abrir outra aba(<a href="https://site.com/" target="_blank"> rel="external")
+        {
+            recomendo que ao usar um link externo colocar junto um parametro escrito (target="_blank") para que ao clicar ele abra outra aba
+
+            tambem pode usar o _self para continuar na mesma aba
+        }
+
+        rel=""
+        {
+          o rel seria para o algoritimo do google saber se o link e interno ou externo
+
+          next indica que o link é para a próxima parte do documento atual
+          prev indica que o link é para a parte anterior do documento atual
+          author indica que é um link para o site do autor do artigo atual
+          external indica que é um link para outro site que não faz parte do site
+          nofollow indica que o site nao eh um site que voce confia
+        }
+    
+          Outro atributo bem útil da tag de âncora é o (hreflang), que permite indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação. 
+
+          em links interno em href usar o atalho (ctrl + space) e selecionar a pasta, caso o arquivo esteja em outra pasta e voce queira voltar, ultilize (../(nome do arquivo))
+    }
+   
+   para download recomendo colocar o parametro (download="(nome do arquivo)" e type="(midia type)")
+   
+   voce pode acessar os midia types acessando aqui: 
+   https://www.iana.org/assignments/media-types/media-types.xhtml
+ }
+
+AULA 010 - Imagens dinamicas
+ {
+    tags
+
+    picture // colocar conmjunto de imagens
+    source  // redimensionar a imagens
+
+
+    obs:
+
+     colocar a imagem maior dentro de (picture) depois colar as menores no source dentro de scrset escrevendo na mao o diretorio da pasta;
+     lembrar de colocar a imagem menor em cima do sorce anteiror
+     na tag (source) mudar de min pra max e colocar o tipo da imagen no type (jpg/png..)   
+ }
+
+AULA 011 - Audios 
+ {
+    tags
+
+    audio // inserir audios 
+
+    obs:
+   audio
+   {
+      dentro da tag audios pode usar parametros como 
+    controls // aparece o player de audio 
+    autoplay // toca o audio assim que a pagina atualiza
+    loop     // roda um loop assim que o audio termina
+
+    pode ser feito de daus maneiras
+        <audio src="midia/bentevi.mp3" controls></audio> // maneira mais simples
+            
+          <audio preload="auto" controls> // maneira mais complexa
+                <source src="midia/bentevi.mp3" type="audio/mpeg">
+                <p>Infelizmente seu navegador nao consegue reproduzir audio</p>
+                <a href="midia/bentevi.mp3" download="bentevi.mp3" type="audio/mpeg">clique aqui para baixar o arquivo MP3</a>
+            </audio> 
+   } 
+ }
+
+AULA 012 - Videos
+ {
+    tags
+
+    video      // colocar videos
+
+    obs
+
+     Videos
+     {
+        parametros:
+         
+        controls // colocar o player
+        width    // redefine o tamanho
+        poster   // capa do video
+        loop     // loop
+        autolplay // 
+
+
+         maneiras de fazer:
+
+         <video src="midia/video.mp4" width="500" controls></video> // maneira simples
+
+         para colocar videos do youtube so clicar em compartilhar depois em "incorporar" e copiar o codigo html dpois colar no codigo
+
+         isso serve pro maps pro vimeo entre outros 
+     }  
+ }
+
+CSS PARTE 1
+
+ Styles
+{
+  background-color: // cor de fundo do site
+  font-family:      // fonte do site 
+  font-size:        // tamanho da fonte 
+  font-weight       // peso da fonte
+  font-style        // estilo da fonte 
+  color:            // cor da fonte          
+  text-align:       // alinha a fonte 
+  text-decoration:  // decorar o texto
+  width             // largura
+  height            // altura
+  padding           // acoxoamento
+  box-shadow        // uma sombra em volta do quadrado
+  margin (auto)     // defini uma margen
+  text-shadow       // uma sombra no texto
+  border-radius     // arredonda a curva
+  display           //
+  border            // crai uma borda
+
+
+  usar um (*) defini como config global das css
+}
+
+AULA 001 - Estilos CSS inline
+{
+   no estilo inline ou seja na linha da tag voce pode colocar os style da css porem fica um pouco limitada pois voce tem que botar em todos os parametros
+
+  metodo usado para configs pontuais
+}
+
+AULA 002 - Estilos CSS interno
+{
+   no estilo interno voce pode crirar uma tag syle na head e colocar os styles la
+j 
+}
+AULA 003 - Estilos CSS externo
+{
+  melhor opcao
+
+  coloque 
+
+  <link rel="stylesheet" href="style.css"> no html para puchar a pasta do css
+}
+
+AULA 004 - Psicologia das cores
+{
+  cores primarias:  amarelo, vermelho, azul
+  cores secundarias: laranja, roxo, verde
+}
+AULA 005 - degrade
+{
+  styles
+
+   background-image (parametros como linear-gradient ou ate radial-gradient) colocar to (right,left,top,bottom)
+}
+
+AULA 006 - fontes
+{
+  styles
+  font-family:      // fonte do site 
+  font-size:        // tamanho da fonte 
+  font-weight       // peso da fonte
+  font-style        // estilo da fonte
+  text-decoration   // decoracao do texto
+
+
+    Medidas absolutas:
+    cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+    Medidas relativas:
+    em (letra maiuscula) , ex (tamanho letra x), rem, vw, vh, %
+
+    recomendavel para tamanho de fonte px e em
+       16px geralmente = 1em
+
+    no peso da fonte pode colocar 
+      font-weight: lighter, normal , bold, bolder ou de (100 - 900);
+
+    no estilo da fonte pode colocar
+      font-style: italic normal oblique;
+
+    na decoracao pode colocar
+      text-decoration: underline (sublinhado), line-through (risca  o texto); 
+   
+     short hand uma ajuda para colocar todos de uma vez
+     ordem:
+         font-style -> font-weight -> font-size -> font-family
+          
+           ficaria assim:
+            font: italic bolder 3em arial;
+    
+  IMPORTAR FONTES DO GOOGLE
+ 
+   EXX 007
+     para importar fontes do google batsa ir no site google fontes
+     selecionar a fonte que vc quer e e clicar em importar como css 
+
+     e copiar o @import fora de um seletor
+
+  BAIXAR FONTES DO GOOGLE
+
+    EXX 008
+      para baixar uma fonte basta baixala em um navegador e importar
+      no codigo usando: 
+       
+       @font-face {
+         font-family: ;
+         src: url(Colocar o arquvi aqui) format('colocar o formato aqui');
+         }
+
+         dependendo do formato tem que adicionar o format('colocar o formato aqui')
+
+          Tipos de formato 
+          - opentype (otf)
+          - truetype (ttf)
+          - embendded-opentype
+          - truetype-aat
+          - svg
+        
+        voce tambem pode adicionar outras url 
+        so colocar uma virgula depois de format (,)   
+}
+
+AULA 007 - Alinhamento de Fontes
+{
+  styles
+
+  text-align:           // alinhar o texto
+  text-indent:          // afastar o inicio do paragrafo
+
+   em text-align pode usar (justify (usado geralmente em <p> alkiunha direita com  esquerda), center, right, left)
+
+   text-ident (unidade de medida em ou px)
+}
+
+
+
+AULA 008 - ID
+{
+  
+  em HTML eh id em CSS eh # (so pode um elementos por pagina)
+  em HTML eh class  em CSS eh . (pode varios elementos)
+  pseudoclasse  em CSS eh :
+  pseudoelement  em CSS eh ::
+  filho  em CSS eh >
+
+  
+  id com CSS
+
+  quando se tem variaz tags do mesmo tipo e voce quer mudar uma especifica
+
+  pode usar ID
+
+  basta colocar um parametro na tag escrito (id"nomeID")
+
+  no css 
+
+  na funcao colocar uma #nomeID
+
+  exemplo: 
+  
+  h1#nomeID
+  {
+    text-align: center;
+  }
+   nao precisa colocar o nome da funcao somente se quiser;
+}
+
+AULA 009 - Class com CSS
+{
+  uma class serve para mudar mias de um valor
+
+  enquanto id so serve para uma tag especifica o class serve para mais de uma tag especifica
+
+  
+  class funciona com o ID porem ao inves de escrever Id naa tag
+  voce coloca (class) exemplo:
+
+  class="nomeCLASS"
+
+  no css ao inves de colocar # colcoar .
+
+  posso mudar qualquer linha de codigo usadno a tag span e dentro botando minha classe:
+
+  <span class="nomeCLASS">
+
+  tabem posso adicionar uma class em uma tag que ja tem uma class 
+  seperando o nome por espaco ex:
+
+  <h2 class="nomeCLASS nomeCLASS">
+}
+
+AULA 010 - pseudo classes em CSS
+{
+  pseudoclasse tem que estar relacionada a um elemento ou uma classe
+
+  sao definidas usando :
+
+  ela esta relacionada a um estado de um elemento
+
+  so colocar : depoisa do elemento e definir qual item colocar ex:
+
+        div:hover
+      {
+          
+      }
+
+  inten:
+
+  hover    // quando passar a mao faz algo
+  active   // quando clicar com o mouse
+  visited  // sites ja visitados antes
+
+
+
+  da pra voce esconder texto de uma div usando o display: none;
+
+  basta colocar
+      
+      para esconder: 
+
+      div > p
+      {
+        display: none;
+      }
+      
+      para aparecer: 
+
+      div:hover > p
+      {
+        display: block;
+      }
+
+
+}
+
+AULA 011 - pseudo elementosem CSS
+{
+  pseudoclasse tem que estar relacionada a um elemento ou uma classe
+
+  sao definidas usando ::
+
+  Pseudo-elementos em CSS são seletores que permitem que você selecione e estilize partes específicas de um elemento, como o primeiro caractere de um elemento ou a primeira linha de um bloco de texto. Eles são represent
+
+  so colocar : depoisa do elemento e definir qual item colocar ex:
+
+        div::before
+      {
+          content: '>';
+      }
+
+  inten:
+
+  before    // quando passar a mao faz algo
+  after  // quando clicar com o mouse
+  first-line // primeira linha
+  first-letter // priemira letra
+
+
+}
+
+AULA 011 - Modelo de Caixa
+{
+  height  // altura
+  width   // largura
+  border  // borda
+  padding // acoxoamento da borda pra dentro
+  margin  // margem da borda pra fora
+  outline // contorno, fora do elemnto
+
+  box-level - pula pra linha de baixo, oculpa a largura inteira da tela e quando termina ele quebra linha
+  
+  inline-level - pula pro lado do conteudo onde sobrar espaco e quando termina ele continua o conteudo
+
+  exemplos de box-level
+
+  tag: div - h1.. - p - main - header - nav - article - inside - footer - form - video
+
+  exemplos de inline-level 
+
+  tag: span - a - code - small - strong - em - sup sub - label - button - input - select
+
+caixa no meio: margin: auto;
+
+pra mudar a o formato da caixa so colocar:
+
+display: block ou inline, ou block-inline
+
+tags agrupadoras
+
+header // cabecalho
+nav  // menu
+main // conteudo principal
+
+sombras
+
+box-shadow: horizontal vertical blur spread(extensao) cor
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
