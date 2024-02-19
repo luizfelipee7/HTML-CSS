@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    background-color: black;
+    background-image: url('../imagens-cap19/wallpaper002.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: contain;
+    
+}
+
+main
+{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgba(31, 34, 49, 0.473);
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1
+{
+    text-align: center;
+    color: #1F2232;
+    font-size: 2em;
+}
+
+p
+{
+    text-align: justify;
+    
+}
+

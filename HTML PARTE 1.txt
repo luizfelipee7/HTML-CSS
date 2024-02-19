@@ -632,6 +632,21 @@ AULA 013 - Imagens de fundo
       }
       assim por diante 
 
+        TAMANHO DA IMAGEM
+    {
+
+      usa a tag background-size: alto;  separando por espacos
+       
+      {
+
+        alto : padrao
+        contain  : adaptar tamanho da tela sem cortar
+        cover  : faz cortes e tampa toda a tela 
+      }
+     
+
+
+
     }
 
     
