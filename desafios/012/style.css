@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Core Sans";
+    src: url("font/core-sans/corsans.ttf");
+  
+}
+
+:root
+{
+    
+    --fonte-padrao: cursive;
+    --fonte-destaque: 'Core Sans';
+    
+
+}
+*
+{
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body
+{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header
+{
+    background-color: black;
+    text-align: center;
+    min-height: 200px;
+    
+    
+}
+header h1
+{
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 100px;
+    padding-top: 50px;
+    font-variant: small-caps;
+    
+}
+header a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;    
+
+}
+
+header a:hover
+{
+    text-decoration: underline;
+}
+header p
+{
+    color: white;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section
+{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+.normal
+{
+    background-color: white;
+    color: black;
+}
+.image
+{
+    background-color: rgb(83, 82, 82);
+    color: white;
+}
+
+.image > p
+{
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 400px;
+    
+}
+footer
+{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-shrink: 0;
+    
+    
+}
+
+.link-especial
+{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.link-especial:hover
+{
+   text-decoration: underline;
+   color: white;
+}
