@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+div.bloco
+{
+   height: 200px;
+   border: 2px solid black;
+   margin: 10px;
+   border-radius: 10px;
+   background-image: url('../imagens-cap19/wallpaper003.jpg');
+
+ 
+}
+div#q1
+{
+   background-position: left top;
+}
+div#q2
+{
+   background-position: left center;
+}
+div#q3
+{
+   background-position: right bottom;
+}
+div#q4
+{
+   background-position: center center;
+}
+
+
+

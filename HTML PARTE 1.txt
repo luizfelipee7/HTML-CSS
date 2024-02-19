@@ -589,6 +589,57 @@ box-shadow: horizontal vertical blur spread(extensao) cor
 
 }
 
+AULA 012 - video no meio
+{
+  position: relative; 
+  position: absolute;  
+
+  colocar position: relative;  na div e depois na div > video colocar position: absolute;  
+
+}
+
+AULA 013 - Imagens de fundo
+{
+      background-image: url('imagem-exemplo');  // colocar imagem de fundo
+      background-repeat:;                       //  repetir imagen
+      background-size: 100px 100px;                         // tamanho da imagem, quantidade de repeticoes
+      background-position: center center;
+      
+      background-repeat
+    {
+
+      repeat : repete a imagem (padrao da tag)
+      no-repeat: noa repte a imagem
+      repeat-x: repete horizontal
+      repeat-y: repete vertical*/
+    }
+  
+
+
+    para colocar imagem de fundo usa background-image: url('imagem-exemplo'); e coloca, 
+    tambem pode colocar links externos de uma site, basta colar url
+
+    POSICAO DA IMAGEM
+    {
+
+      usa a tag background-position: center center; e coloca o que voce quer separando por espacos
+        background-position
+      {
+
+        center center : imagem ao centro
+        left center   : esquerda ao centro
+        right bottom  : direita em baixo
+      }
+      assim por diante 
+
+    }
+
+    
+
+}
+
+
+
 
 
 

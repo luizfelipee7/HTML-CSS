@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+
+
+
+body{
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: normal;
+   background-image: url('imagens-cap19/wallpaper001.jpg');
+}
+
+
+div.quadrado
+{
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+div#q1{
+ background-color: skyblue;
+ margin: auto;
+}
+div#q2{
+    background-image: linear-gradient(to bottom,yellow,red );
+}
+div#q3{
+    background-image: url('imagens-cap19/pattern003.png');
+}
+
+
+
