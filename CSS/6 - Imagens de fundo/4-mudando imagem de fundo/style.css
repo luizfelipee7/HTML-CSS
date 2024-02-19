@@ -3,16 +3,18 @@
 body{
 
 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    font-style: normal;
-    background-color: black;
-    background-image: url('../imagens-cap19/wallpaper002.jpg');
-    background-position: center top;
-    background-repeat: no-repeat;
     height: 100vh;
-    background-size: contain;
-    
+    /* background-color: black;
+    background-image: url('../imagens-cap19/wallpaper002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+    /* short hand background
+    color > image > position > {size} > attachment */
+    background: black url('../imagens-cap19/wallpaper002.jpg') center center fixed;
+    background-size: cover; 
 }
 
 main
@@ -21,7 +23,7 @@ main
     background-color: white;
     border-radius: 15px;
     box-shadow: 5px 5px 20px rgba(31, 34, 49, 0.473);
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
 }

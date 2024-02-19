@@ -589,12 +589,51 @@ box-shadow: horizontal vertical blur spread(extensao) cor
 
 }
 
-AULA 012 - video no meio
+AULA 012 - video/caixa
 {
-  position: relative; 
-  position: absolute;  
+    position: relative; 
+    position: absolute;  
+    transform: translate(-50%,-50%);
+    left 50%;
+    right 50%; 
 
-  colocar position: relative;  na div e depois na div > video colocar position: absolute;  
+    colocar position: relative;  na div e depois na div de dentro colocar position: absolute;  
+
+    isso nos da ascesso a colocar
+
+    left 50%;
+    right 50%; 
+  
+  usar 50% deixa a ponta esquerda no meio
+
+  para deixar o centro do conteudo no centro do container 
+  usamos  transform: translate(-50%,-50%);
+  
+  exemplo:
+
+  
+
+      #container
+    {
+      position: relative;
+      height: 96vh;
+      background-color: purple;
+      
+   
+    }
+    #conteudo
+    {
+      position: absolute;
+      height: 200px;
+      background-color: yellow;
+      width: 400px;
+      left: 50%;
+      top: 50%;
+    
+
+      transform: translate(-50%,-50%);
+      
+    }
 
 }
 
@@ -602,8 +641,9 @@ AULA 013 - Imagens de fundo
 {
       background-image: url('imagem-exemplo');  // colocar imagem de fundo
       background-repeat:;                       //  repetir imagen
-      background-size: 100px 100px;                         // tamanho da imagem, quantidade de repeticoes
-      background-position: center center;
+      background-size: 100px 100px;             // tamanho da imagem, quantidade de repeticoes
+      background-position: center center;       // posicao da imagem
+      background-attachment: scroll ou fixed;   // fixar imagem
       
       background-repeat
     {
@@ -631,26 +671,24 @@ AULA 013 - Imagens de fundo
         right bottom  : direita em baixo
       }
       assim por diante 
-
+    }
         TAMANHO DA IMAGEM
     {
 
       usa a tag background-size: alto;  separando por espacos
        
-      {
-
+      
         alto : padrao
         contain  : adaptar tamanho da tela sem cortar
         cover  : faz cortes e tampa toda a tela 
-      }
-     
-
-
-
+      
     }
 
-    
+  
+                color > image > position >  attachment 
+    background: black url('') center center fixed;
 
+    o background-size nao funciona e deve ser botado a mao
 }
 
 
