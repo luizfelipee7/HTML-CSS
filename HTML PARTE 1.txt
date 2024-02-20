@@ -644,7 +644,7 @@ AULA 013 - Imagens de fundo
       background-size: 100px 100px;             // tamanho da imagem, quantidade de repeticoes
       background-position: center center;       // posicao da imagem
       background-attachment: scroll ou fixed;   // fixar imagem
-      
+    
       background-repeat
     {
 
@@ -689,6 +689,31 @@ AULA 013 - Imagens de fundo
     background: black url('') center center fixed;
 
     o background-size nao funciona e deve ser botado a mao
+
+    EFEITO DA IMAGEM PARADA, 
+
+    ultilizar  background-attachment: fixed;
+}
+
+AULA 014 - TABELAS
+{
+      HIERARQUIA DE TABELAS (SIMPLES)
+           
+            TABLE = TABELA
+            TR = LINHA DAS TABELAS
+            TH = CABECALHO DA TABELAS
+            TD = DADO DA TABELA
+          
+
+           border-collapse: collapse ou separete;  // ajunta ou separa as bordas da tabela
+
+
+            ALINHAMENTO DO CONTEUDO:
+
+             text-align: center;     // alinhamento horizontal
+             vertical-align: middle; // alinhamento vertical 
+
+            
 }
 
 
