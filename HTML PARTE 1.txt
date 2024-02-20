@@ -763,10 +763,23 @@ AULA 014 - TABELAS
            rowspan="" // mescla linhas
            colspan="" // mescla colunas
 
-
-
-
+          AGRUPAR COLUNA
             
+            para agrupar uma coluna podemos
+            usar a tag:
+                 
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo" span="2">
+                <col class="cprof">
+            </colgroup>
+
+            colocando a tag <col> conforme o numero de colunas
+            e colocando uma classe para elas 
+
+            voce tambem pode usar a mesma config em mais de 1 coluna
+            basta colocar span="numero desejado ->>"
+
 
 
 }
