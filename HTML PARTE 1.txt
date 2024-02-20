@@ -708,12 +708,65 @@ AULA 014 - TABELAS
            border-collapse: collapse ou separete;  // ajunta ou separa as bordas da tabela
 
 
-            ALINHAMENTO DO CONTEUDO:
+        ALINHAMENTO DO CONTEUDO:
 
              text-align: center;     // alinhamento horizontal
              vertical-align: middle; // alinhamento vertical 
+        
+        TABELAS GRANDES 
+
+        TABLE
+          CAPTION // legenda da tabela
+
+          THEAD  // cabecalho
+                TR, TD ,TH
+          TBODY  // corpo
+                TR, TD ,TH
+          TFOOT  // rodape
+                TR, TD ,TH
+            
+            escopo de titulos
+            voce pode dizer para o navegador qual mensagem voce quer 
+            passa com th
+
+            basta colocar na tag de th
+
+            scope="col" // qunado os dados do titulo estao em  baixo
+            scope="row" // quando os dados do titulo estao ao lado
+
+        EFEITO ZEBRADO (cor sim cor nao em linhas)  
+           basta usar um seletor personalizado chamado: 
+           :nth-child(odd ou even) ou (2n ou 2n-1)
+
+              exemplo
+               tbody > tr:nth-child(odd)
+                {
+                    background-color: lightgray;
+                }
+         
+         CABECALHO FIXO
+           
+           usar o position: relative;  // no style de tabela
+
+           depois criar um style assim:
+
+              thead > tr > th
+                {
+                    position: sticky;  // colar
+                    top: -1px;
+                    background-color: (mesma cor do cabecalho);
+                }
+
+          MESCLAGEM
+           rowspan="" // mescla linhas
+           colspan="" // mescla colunas
+
+
+
 
             
+
+
 }
 
 
