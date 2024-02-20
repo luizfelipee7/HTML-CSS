@@ -780,7 +780,19 @@ AULA 014 - TABELAS
             voce tambem pode usar a mesma config em mais de 1 coluna
             basta colocar span="numero desejado ->>"
 
-
+  Responsividade em tabela
+     criar uma div em volta da tabela 
+     fazer um id pra essa div e Colocar  overflow-x: auto;
+     assim como o exemplo  
+     
+                div#container
+                {
+   
+                    overflow-x: auto;
+  
+                }
+        isso criarar rolagem lateral
+   
 
 }
 
