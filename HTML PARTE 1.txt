@@ -733,6 +733,8 @@ AULA 014 - TABELAS
 
             scope="col" // qunado os dados do titulo estao em  baixo
             scope="row" // quando os dados do titulo estao ao lado
+            scope="rowgroup" // em baixo agrupado
+            scope="colgroup" // em cima  agrupado
 
         EFEITO ZEBRADO (cor sim cor nao em linhas)  
            basta usar um seletor personalizado chamado: 
