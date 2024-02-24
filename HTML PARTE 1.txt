@@ -797,6 +797,45 @@ AULA 014 - TABELAS
 }
 
 
+AULA 015 - IFRAME
+{
+   para colocar um iframe basta digitar a tag
+
+   iframe    // criar um iframe
+
+   parametros 
+
+       src="",           // colocar o link de um site externo ou interno
+       height="",              // altura
+       width="",               // largura
+       frameborder="0/1",      // borda no iframe 0 = none 1 = borda de 1px
+       name="",                // nome do iframe, ultil para usar no target do link para pode colocar mais de um site no mesmo iframe
+       srcdoc="",           // criar tasg HTML na pagina padrao do iframe
+       sabdbox="",   // ao usar "sandbox" ele liga seguranca no maximo, "allow-same-origin" permite conteudo de mesma origem , "allow-forms" permite formularios.. entre outros
+       
+
+
+
+   e colocar o link do site no src"", voce tabem pode definir height e width 
+
+   tamanho padrao 300x150
+   
+   outro parametro e o frameborder" 0 ou 1" onde coloca uma borda no iframe
+    
+    voce pode usar uma serie de sites externos no mesmo iframe 
+    basta colocar um name"" no iframe e no link do site clocar um target"" com o name que voce colocou
+
+    um outro parametro e o srcdoc"" onde voce pode colocar html dentro dele e dizer o que voce quer que apareca na pagina padrao do iframe
+
+
+     IFRAME SEGURO  
+
+       para deixar o iframe seguro voce pode usar um parametro chamado sandbox="sandbox" quando eu faco isso ele bloqueia todo o tipo de captura de informacao do iframe
+
+
+       voce tamebm pode usar o referpolicy="no-referrer" quando voce coloca isso voce diz que o conteudo que esta carregado no iframe nao
+       vai coletar nenhuma informacao do usuario
+}
 
 
 
