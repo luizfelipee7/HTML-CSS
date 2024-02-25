@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<style>
+    fieldset
+    {
+        background-color: aqua;
+        width: 600px;
+        margin: auto;
+    }
+    legend
+    {
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Teste de formulario</h1>
+     
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend> Dados Pessoais</legend>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" placeholder="(xx)xxxxx-xxxx">
+            <p>
+                <!-- estudar depois sobre RegEx
+            
+                html5 telefone pattern-->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>

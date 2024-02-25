@@ -842,41 +842,83 @@ AULA 016 - FORMULARIO
    para criar um formulario ultilizamos a tga
 
    form    // criar um formulario
+   fieldset  // cria uma boxe em volta do conteudo
+   legend    // da uma nome para a boxe do fieldset
 
    dentro dos formulario colocar uma tag label envolopando o nome 
    para indicar de qual input aquele nome pertence
 
    logo depois colocar os inputs (caixa)
 
-    colocando a tag input onde pode ter diferentes parametros como
-     
-     type="" e o tipo de input pode ser senha entre outros
+
+    INPUT 
+    {
+      colocando a tag input onde pode ter diferentes parametros como
       
-      ex
-        password          // senha
-        text              // caixa de texto padrao
-        id                // colocar o nome com um i  (opcional)
-        name              // colocar o mesmo nome sem o i (opcional)
-        required          // requer colocar algo para pode enviar
-        -minlength=""     // minimo de letras
-        maxlength=""      // maximo de letras
-        size=""           // tamanho da caixa
-        placeholder=""    // mesagem dentro da caixa dando uma dica
-        autocomplete=""   // palavras recomendadas, dentro usar a opcao mais recomendada para aquele input
+      type="" e o tipo de input pode ser senha entre outros
+        
+        ex
+          password          // senha
+          text              // caixa de texto padrao
+          number            // somente numeros
+          month             // mes e ano
+          data              // data
+          time              // horario
+          email             // email porem so valida colocando um @, voce pode usar um
+                              pattern  que verifica o numero porem e pouco usado 
+
+          tel               // telefone voce pode usar um pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" para verificar melhor
+          
+          submit            // botao para enviar 
+          reset             // botao para limpar 
+          checkbox          // caixinhas para marcar as opcoes
+          radio             // circulos para marcar a opcao desejada
+          color             // selecionar uma cor
+          range             // barra de nivel  para arrastar
+          file              // enviar um arquivo
+             
+    }
+          select            // cria uma lista de opcoes para colocar na caixa 
+          datalist          // cria uma lista de opcoes porem voce pode implementar mais opces
+          textarea          // cria uma caixa de texto
+     
+            OUTPUT
+
+             outputo serve para coletar as informacoes e de algum modo mostrar uma atualizacao no site, outputs nao coleta informacoes
+
+             voce pode criar funcoes em java script para criar o que os output vao fazer
 
 
 
    parametros 
+      
+
+
+        id                // colocar o nome com um i  (opcional)
+        name              // colocar o mesmo nome sem o i (opcional)
+        value             // pode colocar valores para iniciar direto 
+        step              // pular de quanto em quanto
+        required          // requer colocar algo para pode enviar
+        -minlength=""     // minimo de letras
+        maxlength=""      // maximo de letras
+        min               // minimo de numeros
+        max               // maximo de numeros
+        size=""           // tamanho da caixa
+        placeholder=""    // mesagem dentro da caixa dando uma dica
+        autocomplete=""   // palavras recomendadas, dentro usar a opcao mais recomendada para aquele input
+
+        
 
       action="",                 // vai dizer pra qual liguagem vai enviar
      
       method="get/post",         // get = padrao - post esconde a url
      
       autocomplete="off/on",     // on = padrao - off nao mostra uma caixinha com palvras recomendadas pelo navegador  usar em cada input para ajudar o navegador a saber o que eh
-      {
+      
+      voce pode envelopar o conteudo do formulario numa tag chamada fieldset e adicionar uma legenda sobre a linha que vai criar comm a tag legend
 
-      }
-
+      sempre que voce usar arquivos ou textarea ou mais de 3k de letras usar o method="post"
+ 
       
       
 
