@@ -843,40 +843,44 @@ AULA 016 - FORMULARIO
 
    form    // criar um formulario
 
+   dentro dos formulario colocar uma tag label envolopando o nome 
+   para indicar de qual input aquele nome pertence
+
+   logo depois colocar os inputs (caixa)
+
+    colocando a tag input onde pode ter diferentes parametros como
+     
+     type="" e o tipo de input pode ser senha entre outros
+      
+      ex
+        password          // senha
+        text              // caixa de texto padrao
+        id                // colocar o nome com um i  (opcional)
+        name              // colocar o mesmo nome sem o i (opcional)
+        required          // requer colocar algo para pode enviar
+        -minlength=""     // minimo de letras
+        maxlength=""      // maximo de letras
+        size=""           // tamanho da caixa
+        placeholder=""    // mesagem dentro da caixa dando uma dica
+        autocomplete=""   // palavras recomendadas, dentro usar a opcao mais recomendada para aquele input
+
+
+
    parametros 
 
       action="",                 // vai dizer pra qual liguagem vai enviar
      
       method="get/post",         // get = padrao - post esconde a url
      
-      autocomplete="off/on",     // on = padrao - off nao mostra uma caixinha com palvras recomendadas pelo navegador
+      autocomplete="off/on",     // on = padrao - off nao mostra uma caixinha com palvras recomendadas pelo navegador  usar em cada input para ajudar o navegador a saber o que eh
+      {
 
-       ="",           // 
-       ="",           // 
-       ="",           // 
-       ="",           // 
-       ="",           // 
+      }
+
+      
       
 
-   e colocar o link do site no src"", voce tabem pode definir height e width 
 
-   tamanho padrao 300x150
-   
-   outro parametro e o frameborder" 0 ou 1" onde coloca uma borda no iframe
-    
-    voce pode usar uma serie de sites externos no mesmo iframe 
-    basta colocar um name"" no iframe e no link do site clocar um target"" com o name que voce colocou
-
-    um outro parametro e o srcdoc"" onde voce pode colocar html dentro dele e dizer o que voce quer que apareca na pagina padrao do iframe
-
-
-     IFRAME SEGURO  
-
-       para deixar o iframe seguro voce pode usar um parametro chamado sandbox="sandbox" quando eu faco isso ele bloqueia todo o tipo de captura de informacao do iframe
-
-
-       voce tamebm pode usar o referpolicy="no-referrer" quando voce coloca isso voce diz que o conteudo que esta carregado no iframe nao
-       vai coletar nenhuma informacao do usuario
 }
 
 
