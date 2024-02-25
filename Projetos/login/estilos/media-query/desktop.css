@@ -8,6 +8,7 @@ body
 #login
 {
     width: 990px;
+    height: 370px;
 }
 #imagem
 {
@@ -24,6 +25,7 @@ body
 #formulario p
 {
     font-size: 1.2em;
+    padding: 10px;
     
 }
 #formulario h1
