@@ -27,3 +27,8 @@ body
     float: right;
     width: 70%;
 }
+#formulario p
+{
+    font-size: 1.2em;
+    
+}
