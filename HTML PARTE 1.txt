@@ -919,14 +919,32 @@ AULA 016 - FORMULARIO
 
       sempre que voce usar arquivos ou textarea ou mais de 3k de letras usar o method="post"
  
-      
-      
-
-
 }
 
 
+AULA 017 - MEDIA QUERIES
+{
+   media queries sao divididos em 
 
+     media types e media features 
+
+  MEDIA TYPES
+     os media types sao definidos nos links do css adicionando o aparametro
+       media="screen,  all,  print"
+         
+         screen // tela
+         all    // tudo
+         print  // impressora
+
+  MEDIA FEATURES
+
+      os media features sao definidos colocando depois do media type um and(orientation: caracteristica)
+       and (orientation: portrait)   // modo retrato
+       and (orientation: landscape)  //  modo paisagem
+
+
+
+}
 
 
 
