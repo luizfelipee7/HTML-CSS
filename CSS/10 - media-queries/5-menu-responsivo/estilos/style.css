@@ -14,6 +14,7 @@ body, html
 header
 {
     background-color: rgb(158, 157, 157); 
+    font-weight: bold;
 }
 
 header h1{

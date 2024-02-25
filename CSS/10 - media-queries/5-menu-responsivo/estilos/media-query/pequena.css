@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+span#burguer
+{
+    display: none;
+}
+menu
+{
+    display: block;
+    
+}
+
+menu li
+{
+    display: inline-block;
+}
+
+main
+{
+    width: 768px;
+}

@@ -8,14 +8,12 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css" media="all">
-    <link rel="stylesheet" href="estilos/media-query/impresora.css" media="print">
-    <link rel="stylesheet" href="estilos/media-query/tablet.css" media="screen and (min-width: 769px) and (max-width: 992px)">
-    <link rel="stylesheet" href="estilos/media-query/desktop.css" media="screen and (min-width: 993px) and (max-width: 1200px)">
-    <link rel="stylesheet" href="estilos/media-query/tv.css" media="screen and (min-width: 1201px)">
+    <link rel="stylesheet" href="estilos/media-query/pequena.css" media="screen and (min-width: 768px)">
+    
     
   
 </head>
-<body>
+<body onresize="mudouTamanho()">
         <header>
            <h1>Meu site</h1>
            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>

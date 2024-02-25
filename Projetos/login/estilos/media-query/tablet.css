@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+
+/* 
+verde: #49a09d
+lilas: #5f2c82
+*/
+body
+{
+    background-image: linear-gradient(to top,#49a09d, #5f2c82 );
+}
+
+#login
+{
+    width: 80vw;
+}
+#imagem
+{
+    float: left;
+    width: 30%;
+    height: 100%;
+   
+}
+#formulario
+{
+    float: right;
+    width: 70%;
+}
