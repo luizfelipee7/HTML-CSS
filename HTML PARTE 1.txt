@@ -837,6 +837,47 @@ AULA 015 - IFRAME
        vai coletar nenhuma informacao do usuario
 }
 
+AULA 016 - FORMULARIO
+{
+   para criar um formulario ultilizamos a tga
+
+   form    // criar um formulario
+
+   parametros 
+
+      action="",                 // vai dizer pra qual liguagem vai enviar
+     
+      method="get/post",         // get = padrao - post esconde a url
+     
+      autocomplete="off/on",     // on = padrao - off nao mostra uma caixinha com palvras recomendadas pelo navegador
+
+       ="",           // 
+       ="",           // 
+       ="",           // 
+       ="",           // 
+       ="",           // 
+      
+
+   e colocar o link do site no src"", voce tabem pode definir height e width 
+
+   tamanho padrao 300x150
+   
+   outro parametro e o frameborder" 0 ou 1" onde coloca uma borda no iframe
+    
+    voce pode usar uma serie de sites externos no mesmo iframe 
+    basta colocar um name"" no iframe e no link do site clocar um target"" com o name que voce colocou
+
+    um outro parametro e o srcdoc"" onde voce pode colocar html dentro dele e dizer o que voce quer que apareca na pagina padrao do iframe
+
+
+     IFRAME SEGURO  
+
+       para deixar o iframe seguro voce pode usar um parametro chamado sandbox="sandbox" quando eu faco isso ele bloqueia todo o tipo de captura de informacao do iframe
+
+
+       voce tamebm pode usar o referpolicy="no-referrer" quando voce coloca isso voce diz que o conteudo que esta carregado no iframe nao
+       vai coletar nenhuma informacao do usuario
+}
 
 
 

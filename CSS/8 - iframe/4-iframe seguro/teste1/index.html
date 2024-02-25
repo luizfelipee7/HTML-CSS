@@ -7,12 +7,10 @@
 </head>
 <body>
     <h1>cadastre-se aqui</h1>
-     <form action="cadastro.php" method="get">
-
-        <p>NOME:
-            <input type="text" name="nome" id="nome">
-            <input type="submit" value="Enviar">
-        </p>
+     <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">NOME:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">SOBRENOME: </label><input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
      </form>
 </body>
 </html>
