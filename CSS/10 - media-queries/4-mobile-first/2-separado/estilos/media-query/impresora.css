@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body 
+{
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+main h1
+{
+  text-shadow: none;
+  color: black;
+}
+main
+{
+  border: 2px solid black;
+  width: 90vw;
+}
+main::after
+{
+  content: 'xxxxxxxxxx';
+  text-decoration: overline;
+}
+img#phone{display: none;}
+img#tablet{display: none;}
+img#print{display: block;}
+img#pc{display: none;}
+img#tv{display: none;}
