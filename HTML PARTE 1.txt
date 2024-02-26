@@ -1001,8 +1001,18 @@ AULA 017 - FLEXBOX
         <div style="flex: 15%;">1</div>   // tamanho especifico, fazer em todos para ter o resultado desejado
     }
       
+  media query mobile first
+    <link rel="stylesheet" href="CSS/style.css" media="all">
+    <link rel="stylesheet" href="CSS/media-query/impresora.css" media="print">
+    <link rel="stylesheet" href="CSS/media-query/tablet.css" media="screen and (min-width: 769px) and (max-width: 992px)">
+     <link rel="stylesheet" href="CSS/media-query/desktop.css" media="screen and (min-width: 993px)">
     
+  media query normal
 
+    <link rel="stylesheet" href="CSS/style.css" media="all">
+    <link rel="stylesheet" href="CSS/media-query/responsive.css" media="screen and (max-width: 1005px)">
+
+    
 }
 
  
