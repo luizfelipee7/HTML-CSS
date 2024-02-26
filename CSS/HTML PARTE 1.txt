@@ -945,9 +945,67 @@ AULA 017 - MEDIA QUERIES
 
 
 }
+AULA 017 - FLEXBOX
+{
 
+   como padrao do display flex as divs sempre ocuparao 
+   todo o espaco do pai dela na altura (height) da pra modificar com a 
+   propriedade ( align-items: ; )
 
+  TAGS PADRAO
+    {
+      
+      flex-direction: row       // itens ficarao como linha
+      flex-direction: column    // itens ficarao como coluna  
+      flex-wrap: wrap;          // nao ultrapassa a div pai
 
+      flex-flow: row wrap;      // shorthand de flex-direction: com flex-wrap:
+    }
+  TAGS DE ALINHAMENTO
+    {
+     justify-content:          // alinhamento horizontal
+     {        
+        flex-start               // itens alinhados a esquerda
+        flex-end                 // itens alinhados a direita
+        center                   // itens alinhados ao centro na horizontal
+
+        space-between            // adaptada os itens a div pai de forma uniforme
+        space-around             // espacamento uniforme em toda volta de cada elemento
+     };
+    
+     align-items:               // alinhamento vertical
+      {        
+        stretch                  // itens do tamanho da div pai
+        center                   // itens alinhados ao centro na vertical
+        flex-start               // itens alinhados em cima
+        flex-end                 // itens alinhados em baixo
+      };
+      
+      align-content:              // tudo grudado no mesmo bloco (vertical)
+        {        
+          center                  // gruadado nos meio
+          flex-start              // grudados em cima
+          flex-end                // grudados em baixo
+        };
+      
+      align-items: X align-content: 
+        com o align-content: vai fazer todo o bloco de conjunto ter o mesmo comprtamento
+        ja o align-items: agente pegaitens em nivel individual
+    }
+  CRESCIMENTO DAS DIVS
+    {
+        flex grow so eh usado na div filho
+
+        flex-grow:1;                      // crescimento das divs uniforme
+        <div style="flex-grow:3;">1</div> // cescimento individual, div especifica do html
+        <div style="flex: 15%;">1</div>   // tamanho especifico, fazer em todos para ter o resultado desejado
+    }
+      
+    
+
+}
+
+ 
 
 
 

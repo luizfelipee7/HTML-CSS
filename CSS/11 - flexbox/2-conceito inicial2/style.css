@@ -1,0 +1,42 @@
+
+*
+{
+    box-sizing: border-box;
+}
+.flex-container
+{
+    background-color: blue;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;  
+
+    justify-content: center;
+    align-content: center;
+    
+
+
+}
+
+.flex-container div
+{
+   flex-grow: 1;
+    background: white;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+/* ëxemplo em mediaquery: */
+  /* @media screen and (max-width:600px)
+  {
+    
+        .flex-container
+        {
+            background-color: blue;
+            display: flex;
+            
+            flex-direction: column;
+        }
+  } */

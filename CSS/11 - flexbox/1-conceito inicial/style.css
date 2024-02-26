@@ -1,0 +1,40 @@
+
+*
+{
+    box-sizing: border-box;
+}
+.flex-container
+{
+    background-color: blue;
+    
+    height: 600px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-flow: row wrap;   /*short hand */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+.flex-container div
+{
+    flex-grow: 1;
+    background: white;
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+}
+  @media screen and (max-width:600px)
+  {
+    
+        .flex-container
+        {
+            background-color: blue;
+            display: flex;
+            
+            flex-direction: column;
+        }
+  }
